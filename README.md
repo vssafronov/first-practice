@@ -91,8 +91,8 @@ git log --oneline
 
 ```mermaid
 graph LR;
-  untracked -- "git add <file>" --> staged;
-  staged    -- "git commit -m 'perfect comment'" --> tracked/comitted;
+  untracked/modified -- "git add <file>" --> staged;
+  staged    -- "git commit -m 'comment'" --> tracked/comitted;
   tracked/staged -- "изменения" --> modified
 ``` 
  
