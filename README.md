@@ -84,7 +84,17 @@ git log --oneline
 ## HEAD  
 
 Файл HEAD указывает на последний коммит в системе git (это можно увидеть при просмотре лога Git).  
-*если необходимо передать в Git последний коммит, то вместо его хэша можно передать слово __HEAD__*
+*если необходимо передать в Git последний коммит, то вместо его хэша можно передать слово __HEAD__*  
+
+
+## Статусы файлов в Git  
+
+```mermaid
+graph LR;
+  untracked -- "git add <file>" --> staged;
+  staged    -- "git commit -m 'perfect comment'" --> tracked/comitted;
+  tracked/staged -- "изменения" --> modified
+``` 
  
     
 ------
